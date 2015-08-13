@@ -1,0 +1,323 @@
+<%@ Page Language="VB" AutoEventWireup="false" CodeFile="gamepage.aspx.vb" Inherits="gamepage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+        .style1 {
+            height: 28px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+      <table border="3" width="20%" align="center" body cellpadding="1" bordercolor="#FFFFFF" bgcolor="#73B27B" cellspacing="2" length="15%" onclick="data()" >
+      <tr>
+      <td align="middle"> <input type=text value="  " id ="one" align="middle" onblur="calculate()"/> </td>
+      <td align="middle"><input type=text value="  " id ="two"  align="middle"  onblur="calculate()"/>  </td>
+      <td align="middle"><input type=text value="  " id ="three"  align="middle"  onblur="calculate()"/>  </td>
+      </tr>
+      <tr>
+    <td align="middle"> <input type=text value="   "id ="four" align="middle" onblur="calculate()"/> </td>
+      <td align="middle"><input type=text value="  " id ="five" align="middle"  onblur="calculate()"/>  </td>
+      <td align="middle"><input type=text value="  " id ="six" align="middle"  onblur="calculate()"/>  </td>
+      </tr>
+       <tr>
+     <td align="middle" class="style1"> <input type=text value="  " id ="seven" align="middle" onblur="calculate()" /> </td>
+ <td align="middle" class="style1"><input type=text value=     "  " id ="eit" align="middle"  onblur="calculate()"/>  </td>
+     <td align="middle" class="style1"><input type=text value="  " id ="nine" align="middle" onblur="calculate()"/>  </td>
+      </tr>
+      </table>
+
+
+
+      
+      <script type="text/javascript">
+
+
+          function calculate() {
+
+             
+
+           
+
+            
+
+              var first = document.getElementById("one").value
+              var second = document.getElementById("two").value
+              var third = document.getElementById("three").value
+              var fourth = document.getElementById("four").value
+              var fifth = document.getElementById("five").value
+              var sixth = document.getElementById("six").value
+              var seventh = document.getElementById("seven").value
+              var eight = document.getElementById("eit").value
+              var ninth = document.getElementById("nine").value
+
+              var count = 1
+
+
+
+
+
+
+
+
+
+              if (fourth == 1 && fifth == 1 && sixth == 1 && count > 0) {
+                document.getElementById("four").style.backgroundColor = "#ff0000"
+                    document.getElementById("five").style.backgroundColor = "#ff0000"
+                        document.getElementById("six").style.backgroundColor = "#ff0000"
+                      alert("PLAYER 1 WIN")
+                        alert("GaMe OVER")
+                      count = 0
+                     
+                  }
+
+                  if (first == 1 && second == 1 && third == 1 && count > 0 && count > 0) {
+
+                      document.getElementById("one").style.border = "1px solid #ff0000"
+                      document.getElementById("one").style.backgroundColor = "#ff0000"
+                      document.getElementById("two").style.border = "1px solid #ff0000"
+                      document.getElementById("two").style.backgroundColor = "#ff0000"
+                      document.getElementById("three").style.border = "1px solid #ff0000"
+                      document.getElementById("three").style.backgroundColor = "#ff0000" 
+                      alert("PLAYER 1 WIN")
+                      alert("GaMe OVER")
+
+                      count = 0
+
+                  }
+
+                  if (seventh == 1 && eight == 1 && ninth == 1 && count > 0) {
+                      document.getElementById("seven").style.border = "1px solid #ff0000"
+                      document.getElementById("seven").style.backgroundColor = "#ff0000"
+                      document.getElementById("eit").style.border = "1px solid #ff0000"
+                      document.getElementById("eit").style.backgroundColor = "#ff0000"
+                      document.getElementById("nine").style.border = "1px solid #ff0000"
+                      document.getElementById("nine").style.backgroundColor = "#ff0000" 
+
+
+                      alert("PLAYER 1 WIN")
+                      alert("GaMe OVER")
+                      count = 0
+                  }
+
+                  if (first == 1 && fourth == 1 && seventh == 1 && count > 0) {
+                      document.getElementById("one").style.border = "1px solid #ff0000"
+                       document.getElementById("one").style.backgroundColor = "#ff0000"
+                      document.getElementById("four").style.border = "1px solid #ff0000"
+                       document.getElementById("four").style.backgroundColor = "#ff0000"
+                      document.getElementById("seven").style.border = "1px solid #ff0000"
+                       document.getElementById("seven").style.backgroundColor = "#ff0000"
+                      alert("PLAYER 1 WIN")
+                      alert("Game over")
+                      count = 0
+
+                  }
+
+                  if (second == 1 && fifth == 1 && eight == 1 && count > 0) {
+
+                      document.getElementById("two").style.border = "1px solid #ff0000"
+                      document.getElementById("two").style.backgroundColor = "#ff0000"
+                      document.getElementById("five").style.border = "1px solid #ff0000"
+                         document.getElementById("five").style.backgroundColor = "#ff0000"
+                      document.getElementById("eit").style.border = "1px solid #ff0000"
+                         document.getElementById("eit").style.backgroundColor = "#ff0000"
+                      alert("PLAYER 1 WIN")
+                      alert("Game over")
+                      count = 0
+                  }
+                  if (third == 1 && sixth == 1 && ninth == 1 && count > 0) {
+                      document.getElementById("three").style.border = "1px solid #ff0000"
+                          document.getElementById("three").style.backgroundColor = "#ff0000"
+                      document.getElementById("six").style.border = "1px solid #ff0000"
+                          document.getElementById("six").style.backgroundColor = "#ff0000"
+                      document.getElementById("nine").style.border = "1px solid #ff0000"
+                          document.getElementById("nine").style.backgroundColor = "#ff0000"
+                      alert("win")
+                      alert("Game Over")
+                      alert("PLAYER 1 WIN")
+                      count = 0
+                  }
+
+                  if (first == 1 && fifth == 1 && ninth == 1 && count > 0) {
+                      document.getElementById("one").style.border = "1px solid #ff0000"
+                          document.getElementById("one").style.backgroundColor = "#ff0000"
+                      document.getElementById("five").style.border = "1px solid #ff0000"
+                          document.getElementById("five").style.backgroundColor = "#ff0000"
+                      document.getElementById("nine").style.border = "1px solid #ff0000"
+                          document.getElementById("nine").style.backgroundColor = "#ff0000"
+
+
+                      alert("PLAYER 1 WIN")
+                      alert("GAME OVER")
+                      count = 0
+                  }
+
+                  if (third == 1 && fifth == 1 && seventh == 1 && count > 0) {
+                      document.getElementById("three").style.border = "1px solid #ff0000"
+                          document.getElementById("three").style.backgroundColor = "#ff0000"
+                      document.getElementById("five").style.border = "1px solid #ff0000"
+
+                          document.getElementById("five").style.backgroundColor = "#ff0000"
+                      document.getElementById("seven").style.border = "1px solid #ff0000"
+                          document.getElementById("seven").style.backgroundColor = "#ff0000"
+                      alert("PLAYER 1 WIN")
+                      alert("GaMe OvEr")
+                      
+                      count = 0
+                  }
+
+
+                  if (fourth == 2 && fifth == 2 && sixth == 2 && count > 0) {
+                      document.getElementById("four").style.border = "1px solid #ff0000"
+                           document.getElementById("four").style.backgroundColor = "#ff0fff"
+                      document.getElementById("five").style.border = "1px solid #ff0000"
+                           document.getElementById("five").style.backgroundColor = "#ff0fff"
+                      document.getElementById("six").style.border = "1px solid #ff0000"
+
+                           document.getElementById("six").style.backgroundColor = "#ff0fff"
+                      alert("PLAYER 2 WIN")
+                      alert("GaMe OvEr")
+                      count = 0
+                  }
+
+                  if (first == 2 && second == 2 && third == 2 && count > 0) {
+                      document.getElementById("one").style.border = "1px solid #ff0000"
+                           document.getElementById("one").style.backgroundColor = "#ff0fff"
+                      document.getElementById("two").style.border = "1px solid #ff0000"
+                           document.getElementById("two").style.backgroundColor = "#ff0fff"
+                      document.getElementById("three").style.border = "1px solid #ff0000"
+                           document.getElementById("three").style.backgroundColor = "#ff0fff"
+                      alert("PLAYER 2 WIN")
+                      alert("GaMe OVER")
+                      count = 0
+                      
+                  }
+
+                  if (seventh == 2 && eight == 2 && ninth == 2 && count > 0 ) {
+                      document.getElementById("seven").style.border = "1px solid #ff0000"
+                           document.getElementById("seven").style.backgroundColor = "#ff0fff"
+                      document.getElementById("eit").style.border = "1px solid #ff0000"
+                           document.getElementById("eit").style.backgroundColor = "#ff0fff"
+                      document.getElementById("nine").style.border = "1px solid #ff0000"
+                           document.getElementById("nine").style.backgroundColor = "#ff0fff"
+
+                      alert("PLAYER 2 WIN")
+                      alert("Game Over")
+                      count = 0
+                  }
+
+                  if (first == 2 && fourth == 2 && seventh == 2 && count > 0) {
+                      document.getElementById("one").style.border = "1px solid #ff0000"
+                     document.getElementById("one").style.backgroundColor = "#ff0fff"
+                      document.getElementById("four").style.border = "1px solid #ff0000"
+                           document.getElementById("four").style.backgroundColor = "#ff0fff"
+                      document.getElementById("seven").style.border = "1px solid #ff0000"
+                           document.getElementById("seven").style.backgroundColor = "#ff0fff"
+                      alert("PLAYER 2 WIN")
+                      alert("Game over")
+                      count = 0
+                     
+                  }
+
+                  if (second == 2 && fifth == 2 && eight == 2 && count > 0) {
+                      document.getElementById("five").style.border = "1px solid #ff0000"
+     document.getElementById("five").style.backgroundColor = "#ff0fff"
+                      document.getElementById("two").style.border = "1px solid #ff0000"
+                           document.getElementById("two").style.backgroundColor = "#ff0fff"
+                      document.getElementById("eit").style.border = "1px solid #ff0000"
+                           document.getElementById("eit").style.backgroundColor = "#ff0fff"
+                      alert("PLAYER 2 WIN")
+                      alert("Game over")
+                      count = 0
+                  
+                  }
+                  if (third == 2 && sixth == 2 && ninth == 2 && count>0) {
+                      document.getElementById("three").style.border = "1px solid #ff0000"
+                           document.getElementById("three").style.backgroundColor = "#ff0fff"
+                      document.getElementById("six").style.border = "1px solid #ff0000"
+                           document.getElementById("six").style.backgroundColor = "#ff0fff"
+                      document.getElementById("nine").style.border = "1px solid #ff0000"
+                           document.getElementById("nine").style.backgroundColor = "#ff0fff"
+                      alert("PLAYER 2 WIN")
+                      alert("Game Over")
+                      count = 0
+                  }
+
+                  if (first == 2 && fifth == 2 && ninth == 2 && count > 0) {
+                      document.getElementById("one").style.border = "1px solid #ff0000"
+     document.getElementById("one").style.backgroundColor = "#ff0fff"
+                      document.getElementById("five").style.border = "1px solid #ff0000"
+                           document.getElementById("five").style.backgroundColor = "#ff0fff"
+                      document.getElementById("nine").style.border = "1px solid #ff0000"
+                           document.getElementById("nine").style.backgroundColor = "#ff0fff"
+                      alert("PLAYER 2 WIN")
+                      alert("GAME OVER")
+                      count = 0
+                  
+                  }
+
+                  if (third == 2 && fifth == 2 && seventh == 2 && count > 0) {
+                      document.getElementById("three").style.border = "1px solid #ff0000"
+                           document.getElementById("three").style.backgroundColor = "#ff0fff"
+                      document.getElementById("five").style.border = "1px solid #ff0000"
+                           document.getElementById("five").style.backgroundColor = "#ff0fff"
+                      document.getElementById("seven").style.border = "1px solid #ff0000"
+                           document.getElementById("seven").style.backgroundColor = "#ff0fff"
+                      alert("PLAYER 2 WIN")
+                      alert("GaMe OvEr")
+                      count = 0
+                  }
+
+                  
+                      if ((first == 1 || first == 2) && (second == 1 || second == 2) && (third == 1 || third == 2) && (fourth == 1 ||
+               fourth == 2) && (fifth == 1 || fifth == 2) && (sixth == 1 || sixth == 2) && (seventh == 1 || seventh == 2) && (eight == 1 || eight == 2) && (ninth == 1 || ninth == 2) && (count>0)) {
+                        
+                               document.getElementById("one").style.backgroundColor = "#ff0fff"
+
+       document.getElementById("two").style.backgroundColor = "#ff0fff"
+              document.getElementById("three").style.backgroundColor = "#ff0fff"
+                     document.getElementById("four").style.backgroundColor = "#ff0fff"
+                            document.getElementById("five").style.backgroundColor = "#ff0fff"
+                                   document.getElementById("six").style.backgroundColor = "#ff0fff"
+                                          document.getElementById("seven").style.backgroundColor = "#ff0fff"
+                                                 document.getElementById("eit").style.backgroundColor = "#ff0fff"
+                                                 document.getElementById("nine").style.backgroundColor = "#ff0fff"
+
+                          alert("GAME OVER")
+                          alert("TIE")
+                     
+                  }
+
+           
+           
+          }
+              </script>
+               </div>
+              </form>
+
+     </body>
+</html
+         
+
+
+
+            
+                  
+
+        
+  
+        
+  
+  
+
+    
+   
+
+
+
+>
