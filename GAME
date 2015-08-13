@@ -1,0 +1,62 @@
+<%@ Page Language="VB" AutoEventWireup="false" CodeFile="game.aspx.vb" Inherits="game" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link href="css/style.css" rel="stylesheet" type="text/css" />
+         <style>
+      
+        .btn
+     {
+          border:1px solid #0F0F0F;
+          width:100px;
+          height:22px;
+          padding:6px;
+          background-color:##73B27B;
+     }
+      </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table border="5"  width="15%" align="center" body cellpadding="1" bordercolor="#FFFFFF" bgcolor="#73B27B" cellspacing="2" height="200px">
+    <tr>
+    <td align="center" class="btn">Tic Tac Toe</td>
+  
+           
+   
+    </tr>
+   <tr>
+    <td align="middle">
+     
+     <a href="gamepage.aspx"  onclick="data()">Start Game</a>
+     </br>
+      <a href="exit.aspx"  onclick="data1()">Exit</a>
+    </td>
+    </tr>
+    </table>
+    
+      <script type="text/javascript">
+
+          function data() {
+
+              alert("1st PLAYER ENTER 1")
+              alert("2nd PLAYER ENTER 2")
+
+          }
+          function data1() {
+
+              alert("Thankyou for playing")
+              
+
+          }
+
+
+
+  </script>
+    </div>
+    </form>
+</body>
+</html>
